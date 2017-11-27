@@ -102,11 +102,19 @@ var outerFunction = function() {
 
 outerFunction();
 console.log('the murderer is ', murderer);
-// There are three functions here which are never called so the name remains
-// unchanged and outputting to the console the result will be:
-// "the murderer is rick".
+// There are three functions here which are never called by the line which
+// actually displays output, so the name remains unchanged and outputting to
+// the console the result will be: "the murderer is rick".
 
 
 // Episode 7 - Make up your own episode/s!
 
 // Make up your own episode which can be whatever you wish and the rest of the class will work out together what happened and what the output will be.
+
+function setGlobalKiller() {
+  ghostFaceKillah = "Jeffrey Dahmer";
+}
+var ghostFaceKillah = "Ted Bundy";
+
+setGlobalKiller();
+console.log("The killer is " + ghostFaceKillah);
